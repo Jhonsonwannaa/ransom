@@ -18,9 +18,9 @@ for xx in x :
                 xd = dada.read()
                 key = Fernet.generate_key()
                 f = Fernet('pskwmwBip8DE8YcqP-oHvhSZG8GOZ0e9dEBqKavOejY=')
-                 token = f.decrypt(xd)
-                 file =open(ca,'w')
-                 file.write(token)
+                token = f.decrypt(xd)
+                file =open(ca,'w')
+                file.write(token)
                       
                         
                         
